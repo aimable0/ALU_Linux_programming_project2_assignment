@@ -1,11 +1,7 @@
 /*
  * prime_threads.c
  * Counts prime numbers between 1 and 200,000 using 16 threads.
- * Each thread processes an equal segment of the range.
- * A pthread_mutex_t protects the shared global counter.
- *
  * Compile: gcc -Wall -pthread -o prime_threads prime_threads.c
- * Run:     ./prime_threads
  */
 
 #include <stdio.h>

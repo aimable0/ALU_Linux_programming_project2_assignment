@@ -1,11 +1,5 @@
 /*
  * search.c — Multi-threaded keyword search across multiple text files
- *
- * Usage:
- *   ./search <keyword> <output.txt> <file1> [file2 ...] <num_threads>
- *
- * Compile:
- *   gcc -Wall -O2 -pthread -o search search.c
  */
 
 #include <stdio.h>
