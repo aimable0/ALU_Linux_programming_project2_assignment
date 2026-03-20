@@ -1,0 +1,31 @@
+========================================
+ Keyword Search Results
+ Keyword  : "the"
+ Files    : 16
+ Threads  : 2
+ CPU cores: 6
+========================================
+
+[Thread  1] tests/file1.txt                          => 500 occurrence(s)
+[Thread  2] tests/file10.txt                         => 500 occurrence(s)
+[Thread  1] tests/file11.txt                         => 0 occurrence(s)
+[Thread  2] tests/file12.txt                         => 500 occurrence(s)
+[Thread  1] tests/file13.txt                         => 0 occurrence(s)
+[Thread  2] tests/file14.txt                         => 0 occurrence(s)
+[Thread  1] tests/file15.txt                         => 500 occurrence(s)
+[Thread  2] tests/file16.txt                         => 0 occurrence(s)
+[Thread  1] tests/file2.txt                          => 0 occurrence(s)
+[Thread  1] tests/file4.txt                          => 500 occurrence(s)
+[Thread  1] tests/file5.txt                          => 500 occurrence(s)
+[Thread  2] tests/file3.txt                          => 500 occurrence(s)
+[Thread  1] tests/file6.txt                          => 500 occurrence(s)
+[Thread  2] tests/file7.txt                          => 0 occurrence(s)
+[Thread  1] tests/file8.txt                          => 0 occurrence(s)
+[Thread  2] tests/file9.txt                          => 1000 occurrence(s)
+
+========================================
+ SUMMARY
+ Total occurrences : 5000
+ Threads used      : 2
+ Elapsed time      : 0.0036 seconds
+========================================
