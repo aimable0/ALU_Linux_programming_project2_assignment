@@ -1,0 +1,28 @@
+6402  execve("./pipeline", ["./pipeline"], 0xffffec78a338 /* 46 vars */) = 0
+6402  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffac392f50) = 6403
+6402  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffac392f50) = 6404
+6404  execve("/usr/local/sbin/grep", ["grep", "root"], 0xffffd1106158 /* 46 vars */ <unfinished ...>
+6402  wait4(6403,  <unfinished ...>
+6404  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+6403  execve("/usr/local/sbin/ps", ["ps", "aux"], 0xffffd1106158 /* 46 vars */ <unfinished ...>
+6404  execve("/usr/local/bin/grep", ["grep", "root"], 0xffffd1106158 /* 46 vars */ <unfinished ...>
+6403  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+6404  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+6403  execve("/usr/local/bin/ps", ["ps", "aux"], 0xffffd1106158 /* 46 vars */ <unfinished ...>
+6404  execve("/usr/sbin/grep", ["grep", "root"], 0xffffd1106158 /* 46 vars */) = -1 ENOENT (No such file or directory)
+6403  <... execve resumed>)             = -1 ENOENT (No such file or directory)
+6404  execve("/usr/bin/grep", ["grep", "root"], 0xffffd1106158 /* 46 vars */ <unfinished ...>
+6403  execve("/usr/sbin/ps", ["ps", "aux"], 0xffffd1106158 /* 46 vars */) = -1 ENOENT (No such file or directory)
+6404  <... execve resumed>)             = 0
+6403  execve("/usr/bin/ps", ["ps", "aux"], 0xffffd1106158 /* 46 vars */) = 0
+6403  exit_group(0)                     = ?
+6403  +++ exited with 0 +++
+6402  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 6403
+6404  exit_group(0 <unfinished ...>
+6402  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6403, si_uid=1000, si_status=0, si_utime=0, si_stime=5} ---
+6404  <... exit_group resumed>)         = ?
+6404  +++ exited with 0 +++
+6402  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6404, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+6402  wait4(6404, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 6404
+6402  exit_group(0)                     = ?
+6402  +++ exited with 0 +++
