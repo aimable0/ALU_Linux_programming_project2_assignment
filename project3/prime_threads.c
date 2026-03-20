@@ -49,8 +49,6 @@ static void *count_primes_in_segment(void *arg) {
     prime_count += local_count;
     pthread_mutex_unlock(&count_mutex);
 
-    printf("  Thread %2d | range [%6ld – %6ld] | local primes: %ld\n",
-           args->thread_id, args->range_start, args->range_end, local_count);
 
     pthread_exit(NULL);
 }
@@ -62,8 +60,6 @@ int main(void) {
 
     long segment = UPPER_LIMIT / NUM_THREADS;   /* 200000 / 16 = 12500 */
 
-    printf("Counting primes from 1 to %d using %d threads...\n\n",
-           UPPER_LIMIT, NUM_THREADS);
 
     /* ── Create threads ──────────────────────────────────────────────── */
     for (int i = 0; i < NUM_THREADS; i++) {
